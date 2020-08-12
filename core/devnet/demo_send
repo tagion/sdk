@@ -1,0 +1,10 @@
+#!/bin/bash
+
+WALLETPATH=/workspace
+
+cd $WALLETPATH/$2
+tagionwallet --invoice $WALLETPATH/$1/$1-to-$2.hibon --pin 1111 --create-invoice DEMO:$3
+cd $WALLETPATH/$1 
+tagionwallet --update
+tagionwallet --pay ./$1-to-$2.hibon --pin 1111 -s
+rm ./$1-to-$2.hibon

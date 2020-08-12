@@ -1,0 +1,6 @@
+* text eol=lf
+core/wallet/tagionwallet filter=lfs diff=lfs merge=lfs -text
+core/utils/hibon/hibonutil filter=lfs diff=lfs merge=lfs -text
+core/utils/dart/dartutil filter=lfs diff=lfs merge=lfs -text
+core/utils/tagion/tagionutil filter=lfs diff=lfs merge=lfs -text
+core/devnet/tagionwave filter=lfs diff=lfs merge=lfs -text

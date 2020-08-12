@@ -1,0 +1,11 @@
+#!/bin/bash
+
+FILE=$PWD/node0/dart.drt
+if test -f "$FILE"; then
+    echo "Resuming devnet..."
+    /tagion/devnet/tagionwave --loops 0
+else
+    echo "The devnet config was not found in this directory"
+    echo "Use 'bootstrap' command to define default config"
+fi
+

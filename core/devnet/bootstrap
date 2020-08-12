@@ -1,0 +1,3 @@
+#!/bin/bash
+
+cp /tagion/devnet/bootstrap-default/* ./ -r

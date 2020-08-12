@@ -1,0 +1,133 @@
+{
+    "dart": {
+        "angle_from_port": false,
+        "commands": {
+            "read_timeout": 10000
+        },
+        "from_ang": 0,
+        "generate": false,
+        "host": {
+            "max_size": 10240,
+            "timeout": 3000
+        },
+        "initialize": true,
+        "mdns": {
+            "delay_before_start": 5000,
+            "host": {
+                "max_size": 10240,
+                "timeout": 3000
+            },
+            "interval": 400,
+            "protocol_id": "tagion_dart_mdns_pid",
+            "task_name": "tagion_dart_mdns_tid"
+        },
+        "name": "dart",
+        "path": "./%dir%/dart.drt",
+        "prefix": "dart_",
+        "protocol_id": "tagion_dart_pid",
+        "request": false,
+        "ringWidth": 3,
+        "rings": 3,
+        "subs": {
+            "host": {
+                "max_size": 102400,
+                "timeout": 3000000
+            },
+            "masterPort": 4030,
+            "protocol_id": "tagion_dart_subs_pid",
+            "task_name": "tagion_dart_subs_tid",
+            "tick_timeout": 500
+        },
+        "sync": {
+            "attempts": 20,
+            "host": {
+                "max_size": 10240,
+                "timeout": 3000
+            },
+            "master_angle_from_port": false,
+            "maxMasters": 1,
+            "maxSlavePort": 4020,
+            "maxSlaves": 4,
+            "max_handlers": 20,
+            "netFromAng": 0,
+            "netToAng": 0,
+            "protocol_id": "tagion_dart_sync_pid",
+            "replay_tick_timeout": 5,
+            "task_name": "tagion_dart_sync_tid",
+            "tick_timeout": 50
+        },
+        "synchronize": true,
+        "task_name": "tagion_dart_tid",
+        "tick_timeout": 500,
+        "to_ang": 0
+    },
+    "delay": 200,
+    "heartbeat": {
+        "task_name": "heartbeat"
+    },
+    "infinity": false,
+    "logext": "log",
+    "logger": {
+        "file_name": "\/tmp\/tagion.log",
+        "flush": true,
+        "task_name": "tagion.logger",
+        "to_console": true
+    },
+    "loops": 30,
+    "message": {
+        "language": "",
+        "update": false
+    },
+    "min_port": 6000,
+    "monitor": {
+        "max": 0,
+        "port": 10900,
+        "prefix": "monitor",
+        "task_name": "monitor",
+        "timeout": 500
+    },
+    "node_id": 0,
+    "node_name": "",
+    "nodeprefix": "Node",
+    "nodes": 4,
+    "path_arg": "",
+    "port": 4001,
+    "port_base": 4000,
+    "seed": 42,
+    "separator": "_",
+    "sequential": false,
+    "stdout": "\/dev\/tty",
+    "timeout": 800,
+    "tmp": "\/tmp\/",
+    "trace_gossip": false,
+    "transaction": {
+        "max": 0,
+        "prefix": "transaction",
+        "service": {
+            "address": "0.0.0.0",
+            "certificate": "pem_files\/domain.pem",
+            "client_timeout": 4000,
+            "max_buffer_size": 16384,
+            "max_connections": 1000,
+            "max_number_of_fiber_reuse": 1000,
+            "max_queue_length": 100,
+            "min_number_of_fibers": 10,
+            "name": "",
+            "port": 10800,
+            "prefix": "transervice",
+            "private_key": "pem_files\/domain.key.pem",
+            "select_timeout": 300,
+            "task_name": ""
+        },
+        "task_name": "transaction",
+        "timeout": 250
+    },
+    "transcript": {
+        "enable": false,
+        "pause_from": 333,
+        "pause_to": 888,
+        "prefix": "transcript",
+        "task_name": "transcript"
+    },
+    "url": "127.0.0.1"
+}
