@@ -63,6 +63,8 @@ Once you have Git and Docker installed on your machine, you can run the SDK cont
 
 If you need a video guide, our community member, [Emil Vestergaard](https://forum.tagion.org/u/emil/summary), made a [video based on this guide](https://www.youtube.com/watch?v=kRzgp7o7kFU).
 
+You will need [Git](https://git-scm.com/), [Git LFS](https://git-lfs.github.com/) and [Docker](https://www.docker.com/get-started).
+
 ### Step 1. Clone SDK Repository
 
 ``` bash
